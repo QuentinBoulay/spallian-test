@@ -11,3 +11,85 @@ body {
   text-align: center;
   padding: 3rem 0;
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #333;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  color: #ffff;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+}
+
+/* Cards */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px 100px;
+  justify-content: center;
+}
+
+/* Style pour les cartes individuelles */
+
+.card { 
+  flex: 0 0 calc(33.3333% - 1rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 50px;
+
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
