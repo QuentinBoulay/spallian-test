@@ -1,21 +1,21 @@
 import { useEffect, useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 import ConnexionApi from "../services/ConnexionApi.js";
 import Navbar from "./templates/Navbar.js";
-import ThemeContext from "../context/ThemeContext";
 
-function People() {
+function Vehicle() {
   const { setTheme } = useContext(ThemeContext);
 
   useEffect(() => {
-    setTheme("people");
+    setTheme("vehicles");
   }, [setTheme]);
 
   return (
     <>
       <Navbar />
-      <ConnexionApi theme="people" />
+      <ConnexionApi theme="vehicles" />
     </>
   );
 }
 
-export default People;
+export default Vehicle;
