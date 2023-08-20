@@ -2,6 +2,7 @@ import { useEffect, useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 import ConnexionApi from "../services/ConnexionApi.js";
 import Navbar from "./templates/Navbar.js";
+import Footer from "./templates/Footer";
 
 function Vehicle() {
   const { setTheme } = useContext(ThemeContext);
@@ -14,6 +15,7 @@ function Vehicle() {
     <>
       <Navbar />
       <ConnexionApi theme="vehicles" />
+      <Footer />
     </>
   );
 }

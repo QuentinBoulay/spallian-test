@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
 import { useQuery } from "react-query";
 import Spinner from "../Spinner";
+import imgDetail from '../../img/img_400x400.png';
 
 function Detail() {
   const { userId } = useParams();
@@ -33,17 +34,24 @@ function Detail() {
   if (theme === "people") {
     return (
       <>
-        <div className="card-content">
-          <h3>{data.name}</h3>
-          <ul>
-            <li>{data.height}</li>
-            <li>{data.mass}</li>
-            <li>{data.hair_color}</li>
-            <li>{data.skin_color}</li>
-            <li>{data.eye_color}</li>
-            <li>{data.birth_year}</li>
-            <li>{data.gender}</li>
-          </ul>
+          <div class="detail-container">
+            <div class="detail">
+              <div class="detail-image">
+                <img src={imgDetail} alt="" />
+              </div>
+              <div class="detail-description">
+                <h3>{data.name}</h3>
+                <ul>
+                    <li>{data.height}</li>
+                    <li>{data.mass}</li>
+                    <li>{data.hair_color}</li>
+                    <li>{data.skin_color}</li>
+                    <li>{data.eye_color}</li>
+                    <li>{data.birth_year}</li>
+                    <li>{data.gender}</li>
+                </ul>
+              </div>
+            </div>
         </div>
       </>
     );
@@ -79,18 +87,25 @@ function Detail() {
 
     return (
       <>
-        <div className="card-content">
-          <h3>{data.name}</h3>
-          <ul>
-            <li>{data.rotation_period}</li>
-            <li>{data.orbital_period}</li>
-            <li>{data.diameter}</li>
-            <li>{data.climate}</li>
-            <li>{data.gravity}</li>
-            <li>{data.terrain}</li>
-            <li>{data.surface_water}</li>
-            <li>{data.population}</li>
-          </ul>
+          <div class="detail-container">
+            <div class="detail">
+              <div class="detail-image">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" />
+              </div>
+              <div class="detail-description">
+                <h3>{data.name}</h3>
+                <ul>
+                  <li>{data.rotation_period}</li>
+                  <li>{data.orbital_period}</li>
+                  <li>{data.diameter}</li>
+                  <li>{data.climate}</li>
+                  <li>{data.gravity}</li>
+                  <li>{data.terrain}</li>
+                  <li>{data.surface_water}</li>
+                  <li>{data.population}</li>
+                </ul>
+              </div>
+            </div>
         </div>
       </>
     );
@@ -115,23 +130,30 @@ function Detail() {
     // 	"https://swapi.dev/api/films/6/"
     // ],
     return (
-      <>
-        <div className="card-content">
-          <h3>{data.name}</h3>
-          <ul>
-            <li>{data.model}</li>
-            <li>{data.manufacturer}</li>
-            <li>{data.cost_in_credits}</li>
-            <li>{data.length}</li>
-            <li>{data.max_atmosphering_speed}</li>
-            <li>{data.crew}</li>
-            <li>{data.passengers}</li>
-            <li>{data.cargo_capacity}</li>
-            <li>{data.consumables}</li>
-            <li>{data.hyperdrive_rating}</li>
-            <li>{data.MGLT}</li>
-            <li>{data.starship_class}</li>
-          </ul>
+            <>
+          <div class="detail-container">
+            <div class="detail">
+              <div class="detail-image">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" />
+              </div>
+              <div class="detail-description">
+                <h3>{data.name}</h3>
+                <ul>
+                  <li>{data.model}</li>
+                  <li>{data.manufacturer}</li>
+                  <li>{data.cost_in_credits}</li>
+                  <li>{data.length}</li>
+                  <li>{data.max_atmosphering_speed}</li>
+                  <li>{data.crew}</li>
+                  <li>{data.passengers}</li>
+                  <li>{data.cargo_capacity}</li>
+                  <li>{data.consumables}</li>
+                  <li>{data.hyperdrive_rating}</li>
+                  <li>{data.MGLT}</li>
+                  <li>{data.starship_class}</li>
+                </ul>
+              </div>
+            </div>
         </div>
       </>
     );

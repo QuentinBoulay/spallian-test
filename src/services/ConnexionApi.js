@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Cards from "../card/Cards.js";
+import Cards from "../components/card/Cards.js";
 import Pagination from "../components/Pagination.js";
 import Spinner from "../components/Spinner.js";
 import { useQuery } from "react-query";
