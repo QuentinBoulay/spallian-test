@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -8,30 +8,38 @@ function Navbar() {
       </div>
       <ul className="nav-links">
         <li>
-          <Link to="/people">People</Link>
+          <NavLink to="/people" activeClassName="active">
+            People
+          </NavLink>
         </li>
         <li>
-          <Link to="/planets">Planet</Link>
+          <NavLink to="/planets" activeClassName="active">
+            Planets
+          </NavLink>
         </li>
         <li>
-          <Link to="/starships">Starship</Link>
+          <NavLink to="/starships" activeClassName="active">
+            Starships
+          </NavLink>
         </li>
         <li>
-          <Link to="/films">Films</Link>
+          <NavLink to="/films" activeClassName="active">
+            Films
+          </NavLink>
         </li>
         <li>
-          <Link to="/species">Species</Link>
+          <NavLink to="/species" activeClassName="active">
+            Species
+          </NavLink>
         </li>
         <li>
-          <Link to="/vehicles">Vehicles</Link>
+          <NavLink to="/vehicles" activeClassName="active">
+            Vehicles
+          </NavLink>
         </li>
       </ul>
     </nav>
   );
 }
-
-// "films": "https://swapi.dev/api/films/",
-// "species": "https://swapi.dev/api/species/",
-// "vehicles": "https://swapi.dev/api/vehicles/",
 
 export default Navbar;

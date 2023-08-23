@@ -33,7 +33,7 @@ const App = () => {
               <Route path="/species" element={<Species />} />
               <Route path="/films" element={<Film />} />
               <Route path="/vehicles" element={<Vehicle />} />
-              <Route path={`/${theme}/:userId`} element={<DetailCard />} />
+              <Route path={`/${theme}/:id`} element={<DetailCard />} />
             </Routes>
           </BrowserRouter>
         </ThemeContext.Provider>

@@ -7,17 +7,18 @@ import DetailCard from "./DetailCard.js";
 import ThemeContext from "../context/ThemeContext";
 
 function Home() {
-  // Pour garder la trace de l'option sélectionnée
   const [selectedOption, setSelectedOption] = useState("people");
-  // Pour garder la trace de la valeur de recherche
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
   const { setTheme } = useContext(ThemeContext);
 
   const handleSearch = () => {
-    // Ajoutez la logique pour traiter la recherche ici.
-    navigate(selectedOption + "/" + searchValue);
-    setTheme(selectedOption);
+    if (isNaN(searchValue)) {
+      alert("Veuillez entrer un chiffre");
+    } else {
+      navigate(selectedOption + "/" + searchValue);
+      setTheme(selectedOption);
+    }
 
     <DetailCard />;
   };

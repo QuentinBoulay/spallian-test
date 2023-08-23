@@ -7,7 +7,7 @@ function DetailCard() {
     <>
       <Navbar />
       <Detail />
-      <Footer/>
+      <Footer />
     </>
   );
 }

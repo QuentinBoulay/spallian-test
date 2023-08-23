@@ -15,7 +15,7 @@ function People() {
     <>
       <Navbar />
       <ConnexionApi theme="people" />
-      <Footer/>
+      <Footer />
     </>
   );
 }
