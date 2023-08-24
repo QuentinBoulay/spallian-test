@@ -101,7 +101,7 @@ footer p a {
 }
 
 .home-container h1,
-.home-container h2 {
+.home-container h3 {
   text-align: center;
 }
 
@@ -268,6 +268,16 @@ footer p a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Data not found */
+
+.data-not-found {
+  padding: 50px 0;
+}
+
+.data-not-found h3 {
+  text-align: center;
 }
 
 /* Pagination */

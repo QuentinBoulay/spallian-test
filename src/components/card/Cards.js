@@ -1,16 +1,16 @@
 import Card from "./Card.js";
 import { Link } from "react-router-dom";
 
+export function splitUrl(url) {
+  if (!url) return "";
+
+  const parts = url.split("/");
+  const id = parts[parts.length - 2];
+  return id;
+}
+
 function Cards(props) {
   const { cards, theme } = props;
-
-  function splitUrl(url) {
-    if (!url) return ""; // retourne une chaîne vide si url est undefined ou null
-
-    const parts = url.split("/");
-    const id = parts[parts.length - 2];
-    return id;
-  }
 
   return (
     <div className="cards-container">

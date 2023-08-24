@@ -15,7 +15,7 @@ function Film() {
     <>
       <Navbar />
       <ConnexionApi theme="films" />
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import Navbar from "./templates/Navbar.js";
 import Footer from "./templates/Footer.js";
-import DetailCard from "./DetailCard.js";
 import ThemeContext from "../context/ThemeContext";
 
 function Home() {
@@ -16,11 +15,9 @@ function Home() {
     if (isNaN(searchValue)) {
       alert("Veuillez entrer un chiffre");
     } else {
-      navigate(selectedOption + "/" + searchValue);
       setTheme(selectedOption);
+      navigate(selectedOption + "/" + searchValue);
     }
-
-    <DetailCard />;
   };
 
   return (

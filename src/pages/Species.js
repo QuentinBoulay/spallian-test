@@ -15,7 +15,7 @@ function Species() {
     <>
       <Navbar />
       <ConnexionApi theme="species" />
-      <Footer/>
+      <Footer />
     </>
   );
 }

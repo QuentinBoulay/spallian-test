@@ -8,32 +8,50 @@ function Navbar() {
       </div>
       <ul className="nav-links">
         <li>
-          <NavLink to="/people" activeClassName="active">
+          <NavLink
+            to="/people"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             People
           </NavLink>
         </li>
         <li>
-          <NavLink to="/planets" activeClassName="active">
+          <NavLink
+            to="/planets"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Planets
           </NavLink>
         </li>
         <li>
-          <NavLink to="/starships" activeClassName="active">
+          <NavLink
+            to="/starships"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Starships
           </NavLink>
         </li>
         <li>
-          <NavLink to="/films" activeClassName="active">
+          <NavLink
+            to="/films"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Films
           </NavLink>
         </li>
         <li>
-          <NavLink to="/species" activeClassName="active">
+          <NavLink
+            to="/species"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Species
           </NavLink>
         </li>
         <li>
-          <NavLink to="/vehicles" activeClassName="active">
+          <NavLink
+            to="/vehicles"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Vehicles
           </NavLink>
         </li>

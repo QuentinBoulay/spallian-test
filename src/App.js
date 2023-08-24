@@ -16,13 +16,21 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [itemUrl, setItemUrl] = useState("");
   const [theme, setTheme] = useState(null);
 
   return (
     <>
       <QueryClientProvider client={queryClient}>
         <ThemeContext.Provider
-          value={{ theme, setTheme, currentPage, setCurrentPage }}
+          value={{
+            theme,
+            setTheme,
+            currentPage,
+            setCurrentPage,
+            itemUrl,
+            setItemUrl,
+          }}
         >
           <BrowserRouter>
             <Routes>
@@ -33,7 +41,7 @@ const App = () => {
               <Route path="/species" element={<Species />} />
               <Route path="/films" element={<Film />} />
               <Route path="/vehicles" element={<Vehicle />} />
-              <Route path={`/${theme}/:id`} element={<DetailCard />} />
+              <Route path={`/:theme/:id`} element={<DetailCard />} />
             </Routes>
           </BrowserRouter>
         </ThemeContext.Provider>

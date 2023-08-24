@@ -14,7 +14,7 @@ function Starship() {
     <>
       <Navbar />
       <ConnexionApi theme="starships" />
-      <Footer/>
+      <Footer />
     </>
   );
 }

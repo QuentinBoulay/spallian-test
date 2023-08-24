@@ -15,7 +15,7 @@ function Planet() {
     <>
       <Navbar />
       <ConnexionApi theme="planets" />
-      <Footer/>
+      <Footer />
     </>
   );
 }
